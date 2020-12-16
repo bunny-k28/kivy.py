@@ -1,0 +1,18 @@
+<Button>:
+    font_size: 40
+    color: 0.3, 0.6, 0.7, 1
+    size_hint: 0.3, 0.5
+
+
+<FloatLayout>:
+    Button:
+        id: btn1
+        pos_hint: {'x':0.5, 'y':0.3}
+        text: '' if btn1.state == 'normal' else 'hello bunny'
+        background_color: 0.3, 0.4, 0.5, 1
+
+    Button:
+        id: btn2
+        pos_hint: {'y':0.3}
+        text: 'submit' if btn2.state == 'normal' else 'submitted'
+        background_color: 0.3, 0.4, 0.5, 1

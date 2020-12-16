@@ -1,0 +1,31 @@
+# all the imports
+import kivy
+from kivy.app import App
+from kivy.uix.widget import Widget
+from kivy.properties import ObjectProperty
+
+# class for the touch function
+class Touch(Widget):
+
+    btn = ObjectProperty(None)
+
+    # functions defined for the touch function
+    def on_touch_down(self, touch):
+        print('Mouse Down', touch)
+        self.btn.opacity = 0.5
+
+    def on_touch_move(self, touch):
+        print('Mouse move', touch)
+
+    def on_touch_up(self, touch):
+        print('Mouse Up', touch)
+        self.btn.opacity = 1
+
+# main class for running the app run
+class MyApp(App):
+    def build(self):
+        return Touch()
+
+# the program runner
+if __name__ == '__main__':
+    MyApp().run()
