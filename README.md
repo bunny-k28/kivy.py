@@ -7,4 +7,6 @@
 
 4. More code and files will be added here in this repositery, soon..
 
+5. Please go through my youtube video (https://youtu.be/V2Qqdb1x5jM) if you're facing any problem in installing the kiwi module for python.
+
 5. For more information on our jarvis project visit or copy https://github.com/bunny-k28/jarvis.py/
